@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.worksPage {
+    margin: 2.8rem;
+}
+
+.worksPage__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+
+.worksPage__nav-link {
+    margin: 0 1.2rem;
+
+    font-size: .8rem;
+    color: fade(@black, 70%);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.containerWorkPage {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.portfolioWorkPage {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem 2.8rem;
+}
+
+.portfolioWorkPage__col {
+    flex-basis: 33.3333%;
+    padding: 1rem;
+
+    @media @mobile {
+        flex-basis: 50%;
+    }
+    @media @mobile-sm {
+        flex-basis: 100%;
+    }
+}
+
+.workPage {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 4px fade(#000, 25%);
+    transition: box-shadow .2s linear;
+    &:hover {
+        box-shadow: 0 0 25px fade(#000, 25%);
+    }
+    @media @mobile {
+        max-width: 370px;
+    }
+    @media @mobile-sm {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+}
+
+.workPage__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.workPage__content {
+    padding: 1rem .8rem;
+
+}
+
+.workPage__cat {
+    font-size: .8rem;
+    color: @black;
+    text-transform:  uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.workPage__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+}

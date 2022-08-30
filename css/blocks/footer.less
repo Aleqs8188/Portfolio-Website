@@ -1,0 +1,118 @@
+// main: ../style.less
+
+
+.footer {
+    padding: 1rem;
+    background-color: @black;
+}
+
+.footer__inner {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__credits{
+    display: flex;
+    align-items: center;
+
+    @media @tablet {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    @media @mobile-sm {
+        flex-direction: column;
+    }
+}
+.footer__copyright {
+    padding-right: .8rem;
+    margin-right: 1rem;
+    font-size: 0.94rem;
+    color: #BBBBCC;
+    border-right: 1px solid fade(@gray, 35%);
+
+    @media @mobile-sm {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        border-right: 0;
+    }
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-right: 1.2rem;
+        text-transform: none;
+
+        @media @tablet {
+            margin: 0 .5rem;
+        }
+    }
+}
+
+.footer__nav {
+    align-items: center;
+    display: flex;
+    font-size: .94rem;
+
+    @media @tablet {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    margin-left: 1.5rem;
+    color: #BBBBCC;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &--btn {
+        padding: .5rem 1.4rem;
+        border-radius: 20px;
+        border: 1px solid @gray-light;
+
+        &:hover {
+            border-color: #BBBBCC;
+            text-decoration: none;
+            background-color: #BBBBCC;
+            color: @black;
+        }
+    }
+    @media @tablet {
+        margin: 0 .5rem .5rem;
+    }
+}
+
+.footer__nav-linkScroll {
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    color: #BBBBCC;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &--btn {
+        padding: .5rem 1.4rem;
+        border-radius: 20px;
+        border: 1px solid @gray-light;
+
+        &:hover {
+            border-color: #BBBBCC;
+            text-decoration: none;
+            background-color: #BBBBCC;
+            color: @black;
+        }
+    }
+    @media @tablet {
+        margin: 0 .5rem .5rem;
+    }
+}

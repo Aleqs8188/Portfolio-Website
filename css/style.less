@@ -1,0 +1,115 @@
+// compress: true
+
+@import "vars";
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+html {
+    font-size: 15px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+svg {
+    fill: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+    background: linear-gradient(-45deg, #F2EEE3, #E9D1D0, #FAE0BA, #EB8C73, #F0DED1, #DEC4A7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 93vh;
+
+    &.no-skroll {
+        overflow: hidden;
+    }
+    @media @mobile-sm,@mobile,@tablet,@notebook {
+        height: 345vh;
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body.lock {
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0%;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+canvas {
+    display:block;
+    margin:auto;
+}
+
+/* Vendor */
+
+@import "vendor/slick";
+
+
+/* Block */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/works";
+@import "blocks/work";
+@import "blocks/portfolio";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/articles";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/timeline";
+@import "blocks/progress-bar";
+@import "blocks/contact";
+@import "blocks/form";
+@import "blocks/burger";
+@import "blocks/workPage";
+@import "blocks/modal-contact";
+@import "blocks/light";
+@import "blocks/bodybutton";
+@import "blocks/im";
+@import "blocks/cssLoaderPort";
+
+/* Helpers */
+@import "helpers";

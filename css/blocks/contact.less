@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+
+}
+
+.contact__left {
+    width: 47%;
+    padding: 2rem;
+    background: linear-gradient(-45deg, #F2EEE3, #E9D1D0, #FAE0BA, #EB8C73, #F0DED1, #DEC4A7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 93vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+    color: @black;
+    font-size: .94rem;
+    font-weight: 300;
+}
+
+.contact__info-item {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: .75rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__info-icon {
+    margin-right: 0.75rem;
+}

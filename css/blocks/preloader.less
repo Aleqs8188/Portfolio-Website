@@ -1,0 +1,111 @@
+// main: ../style.less
+
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+    background: linear-gradient(-45deg, #F2EEE3, #E9D1D0, #FAE0BA, #EB8C73, #F0DED1, #DEC4A7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .loader {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 300px;
+        height: 200px;
+    }
+
+    .loader .bar {
+        width: 12px;
+        height: 2px;
+        border-radius: 10px;
+        background-color: white;
+        animation: up_down 1.5s ease-in-out infinite;
+    }
+    @keyframes up_down {
+        0%,
+        100% {
+            height: 2px;
+        }
+        50% {
+            height: 80px;
+        }
+    }
+    .loader .bar:nth-child(1) {
+        background-color: purple;
+        animation-delay: 1s;
+    }
+    
+    .loader .bar:nth-child(2) {
+        background-color: crimson;
+        animation-delay: 0.8s;
+    }
+    
+    .loader .bar:nth-child(3) {
+        background-color: deeppink;
+        animation-delay: 0.6s;
+    }
+    
+    .loader .bar:nth-child(4) {
+        background-color: orange;
+        animation-delay: 0.4s;
+    }
+    
+    .loader .bar:nth-child(5) {
+        background-color: gold;
+        animation-delay: 0.2s;
+    }
+    
+    .loader .bar:nth-child(6) {
+        background-color: gold;
+        animation-delay: 0.2s;
+    }
+    
+    .loader .bar:nth-child(7) {
+        background-color: orange;
+        animation-delay: 0.4s;
+    }
+    
+    .loader .bar:nth-child(8) {
+        background-color: deeppink;
+        animation-delay: 0.6s;
+    }
+    
+    .loader .bar:nth-child(9) {
+        background-color: crimson;
+        animation-delay: 0.8s;
+    }
+    
+    .loader .bar:nth-child(10) {
+        background-color: purple;
+        animation-delay: 1s;
+    }
+
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

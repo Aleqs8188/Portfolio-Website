@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Works</title>
+    <link rel="shortcut icon" href="images/icons8-угол-строительный-48.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <a target="_blank" href="https://icons8.com/icon/HEsrMLxuDRd9/portfolio"></a>
+    <a target="_blank" href="https://icons8.com"></a>
+</head>
+
+<body>
+    <div class="worksPage">
+        <div class="containerWorkPage">
+            <div class="worksPage__nav">
+                <a class="worksPage__nav-link" href="#" data-filter="all">All</a>
+                <a class="worksPage__nav-link" href="#" data-filter="app">App</a>
+                <a class="worksPage__nav-link" href="#" data-filter="website">Website</a>
+                <a class="worksPage__nav-link" href="#" data-filter="interaction">Interaction</a>
+            </div>
+            <div class="portfolioWorkPage" id="portfolio">
+                <div class="portfolioWorkPage__col" data-cat="app">
+                    <div class="workPage" data-modal="#modal_project_1">
+                        <img class="workPage__image" src="https://via.placeholder.com/370x300/09f/fff.png" alt="">
+                        <div class="workPage__content">
+                            <div class="workPage__cat">category: app</div>
+                            <div class="workPage__title">
+                                Project title
+                                <time class="work__date" datetime="2022-03-12">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolioWorkPage__col" data-cat="website">
+                    <div class="workPage" data-modal="#modal_project_2">
+                        <img class="workPage__image" src="https://via.placeholder.com/370x300/09f/fff.png" alt="">
+                        <div class="workPage__content">
+                            <div class="workPage__cat">category: website</div>
+                            <div class="workPage__title">
+                                Project title 2
+                                <time class="work__date" datetime="2022-03-12">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolioWorkPage__col" data-cat="interaction">
+                    <div class="workPage" data-modal="#modal_project_3">
+                        <img class="workPage__image" src="https://via.placeholder.com/370x300/09f/fff.png" alt="">
+                        <div class="workPage__content">
+                            <div class="workPage__cat">category: interaction</div>
+                            <div class="workPage__title">
+                                Project title 3
+                                <time class="work__date" datetime="2022-03-12">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolioWorkPage__col" data-cat="app">
+                    <div class="workPage" data-modal="#modal_project_4">
+                        <img class="workPage__image" src="https://via.placeholder.com/370x300/09f/fff.png" alt="">
+                        <div class="workPage__content">
+                            <div class="workPage__cat">category: app</div>
+                            <div class="workPage__title">
+                                Project title 4
+                                <time class="work__date" datetime="2022-03-12">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolioWorkPage__col" data-cat="website">
+                    <div class="workPage" data-modal="#modal_project_5">
+                        <img class="workPage__image" src="https://via.placeholder.com/370x300/09f/fff.png" alt="">
+                        <div class="workPage__content">
+                            <div class="workPage__cat">category: website</div>
+                            <div class="workPage__title">
+                                Project title 5
+                                <time class="work__date" datetime="2022-03-12">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolioWorkPage__col" data-cat="interaction">
+                    <div class="workPage" data-modal="#modal_project_6">
+                        <img class="workPage__image" src="https://via.placeholder.com/370x300/09f/fff.png" alt="">
+                        <div class="workPage__content">
+                            <div class="workPage__cat">category: interaction</div>
+                            <div class="workPage__title">
+                                Project title 6
+                                <time class="work__date" datetime="2022-03-12">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ModalWorks-->
+    <div class="modal" id="modal_project_1">
+        <!--style="display: none;"-->
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel-button-svgrepo-com.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/333.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">
+                            Project title
+                        </h3>
+                        <div class="modal-work__info">
+                            Category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">CreativeAgency</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>ds j d hajkfn as lfn as fm, asfma, s mfk lafm nkld fh nj sk fnd s l mgn klfdgn klfdng lmfd gnfdkldsff dsfs gdfxhh gfh xgfh gfx hxfh fg hfgh fgh fhhfch mgnd fchfh fklgnf dg fg lfgndffcgh fg fc ghf hcfh cfh fcgh
+                        </p>
+                        <p>
+                            sad kl jhsaf ioahjflk asjfa klfj afl sa fjaklfajfsakjf a klfj ad klj dajhd a hd au io duioa daiodai fghfh hfghcfh fhg gfh cfg jfcjfghf fh f hfh fcghfcghfhf odajdoi kasjdasioj fghfgh fcf ghgfh fh fgh cfgh fgh fgh fgh fgh
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img class="modal-work__rarrow" src="images/arrow-left-svgrepo-com.svg" height="24" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img class="modal-work__rarrow" src="images/arrow-right-svgrepo-com.svg" height="24" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_2">
+        <!--style="display: none;"-->
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel-button-svgrepo-com.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/333.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">
+                            Project title 2
+                        </h3>
+                        <div class="modal-work__info">
+                            Category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">CreativeAgency</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>ds j d hajkfn as lfn as fm, asfma, s mfk lafm nkld fh nj sk fnd s l mgn klfdgn klfdng lmfd gnfdkldsff dsfs gdfxhh gfh xgfh gfx hxfh fg hfgh fgh fhhfch mgnd fchfh fklgnf dg fg lfgndffcgh fg fc ghf hcfh cfh fcgh
+                        </p>
+                        <p>
+                            sad kl jhsaf ioahjflk asjfa klfj afl sa fjaklfajfsakjf a klfj ad klj dajhd a hd au io duioa daiodai fghfh hfghcfh fhg gfh cfg jfcjfghf fh f hfh fcghfcghfhf odajdoi kasjdasioj fghfgh fcf ghgfh fh fgh cfgh fgh fgh fgh fgh
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img class="modal-work__rarrow" src="images/arrow-left-svgrepo-com.svg" height="24" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img class="modal-work__rarrow" src="images/arrow-right-svgrepo-com.svg" height="24" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_3">
+        <!--style="display: none;"-->
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel-button-svgrepo-com.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/333.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">
+                            Project title 3
+                        </h3>
+                        <div class="modal-work__info">
+                            Category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">CreativeAgency</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>ds j d hajkfn as lfn as fm, asfma, s mfk lafm nkld fh nj sk fnd s l mgn klfdgn klfdng lmfd gnfdkldsff dsfs gdfxhh gfh xgfh gfx hxfh fg hfgh fgh fhhfch mgnd fchfh fklgnf dg fg lfgndffcgh fg fc ghf hcfh cfh fcgh
+                        </p>
+                        <p>
+                            sad kl jhsaf ioahjflk asjfa klfj afl sa fjaklfajfsakjf a klfj ad klj dajhd a hd au io duioa daiodai fghfh hfghcfh fhg gfh cfg jfcjfghf fh f hfh fcghfcghfhf odajdoi kasjdasioj fghfgh fcf ghgfh fh fgh cfgh fgh fgh fgh fgh
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img class="modal-work__rarrow" src="images/arrow-left-svgrepo-com.svg" height="24" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img class="modal-work__rarrow" src="images/arrow-right-svgrepo-com.svg" height="24" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_4">
+        <!--style="display: none;"-->
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel-button-svgrepo-com.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/333.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">
+                            Project title 4
+                        </h3>
+                        <div class="modal-work__info">
+                            Category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">CreativeAgency</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>ds j d hajkfn as lfn as fm, asfma, s mfk lafm nkld fh nj sk fnd s l mgn klfdgn klfdng lmfd gnfdkldsff dsfs gdfxhh gfh xgfh gfx hxfh fg hfgh fgh fhhfch mgnd fchfh fklgnf dg fg lfgndffcgh fg fc ghf hcfh cfh fcgh
+                        </p>
+                        <p>
+                            sad kl jhsaf ioahjflk asjfa klfj afl sa fjaklfajfsakjf a klfj ad klj dajhd a hd au io duioa daiodai fghfh hfghcfh fhg gfh cfg jfcjfghf fh f hfh fcghfcghfhf odajdoi kasjdasioj fghfgh fcf ghgfh fh fgh cfgh fgh fgh fgh fgh
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img class="modal-work__rarrow" src="images/arrow-left-svgrepo-com.svg" height="24" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img class="modal-work__rarrow" src="images/arrow-right-svgrepo-com.svg" height="24" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_5">
+        <!--style="display: none;"-->
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel-button-svgrepo-com.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/333.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">
+                            Project title 5
+                        </h3>
+                        <div class="modal-work__info">
+                            Category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">CreativeAgency</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>ds j d hajkfn as lfn as fm, asfma, s mfk lafm nkld fh nj sk fnd s l mgn klfdgn klfdng lmfd gnfdkldsff dsfs gdfxhh gfh xgfh gfx hxfh fg hfgh fgh fhhfch mgnd fchfh fklgnf dg fg lfgndffcgh fg fc ghf hcfh cfh fcgh
+                        </p>
+                        <p>
+                            sad kl jhsaf ioahjflk asjfa klfj afl sa fjaklfajfsakjf a klfj ad klj dajhd a hd au io duioa daiodai fghfh hfghcfh fhg gfh cfg jfcjfghf fh f hfh fcghfcghfhf odajdoi kasjdasioj fghfgh fcf ghgfh fh fgh cfgh fgh fgh fgh fgh
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img class="modal-work__rarrow" src="images/arrow-left-svgrepo-com.svg" height="24" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img class="modal-work__rarrow" src="images/arrow-right-svgrepo-com.svg" height="24" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_6">
+        <!--style="display: none;"-->
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="images/cancel-button-svgrepo-com.svg" alt="Close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x780/333.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">
+                            Project title 6
+                        </h3>
+                        <div class="modal-work__info">
+                            Category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">CreativeAgency</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>ds j d hajkfn as lfn as fm, asfma, s mfk lafm nkld fh nj sk fnd s l mgn klfdgn klfdng lmfd gnfdkldsff dsfs gdfxhh gfh xgfh gfx hxfh fg hfgh fgh fhhfch mgnd fchfh fklgnf dg fg lfgndffcgh fg fc ghf hcfh cfh fcgh
+                        </p>
+                        <p>
+                            sad kl jhsaf ioahjflk asjfa klfj afl sa fjaklfajfsakjf a klfj ad klj dajhd a hd au io duioa daiodai fghfh hfghcfh fhg gfh cfg jfcjfghf fh f hfh fcghfcghfhf odajdoi kasjdasioj fghfgh fcf ghgfh fh fgh cfgh fgh fgh fgh fgh
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img class="modal-work__rarrow" src="images/arrow-left-svgrepo-com.svg" height="24" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img class="modal-work__rarrow" src="images/arrow-right-svgrepo-com.svg" height="24" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JS-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
