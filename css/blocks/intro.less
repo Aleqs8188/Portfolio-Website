@@ -50,20 +50,20 @@
     span {
 
         display: block;
-        text-shadow: 0 0 80px rgba(255,255,255,.5);
+        text-shadow: 0 0 80px rgba(255, 255, 255, .5);
 
         background: url(https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2015/02/TextFill_image10.jpg) repeat-y;
         -webkit-background-clip: text;
         background-clip: text;
-    
-    /* Animate Background Image */
-    
+
+        /* Animate Background Image */
+
         -webkit-text-fill-color: transparent;
         animation: aitf 10s linear infinite;
-    
-    /* Activate hardware acceleration for smoother animations */
-    
-        transform: translate3d(0,0,0);
+
+        /* Activate hardware acceleration for smoother animations */
+
+        transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
     }
 
@@ -73,12 +73,14 @@
 }
 
 @keyframes aitf {
-    50% { background-position: 30% 30%; }
+    50% {
+        background-position: 30% 30%;
+    }
 }
 
 .intro__text {
     margin-bottom: 25px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: fade(@black, 70%);
 }
 
@@ -87,11 +89,13 @@
     bottom: -1px;
     right: 0;
     z-index: 1;
-    width: 450px;
+    width: 300px;
+    margin-right: 90px;
 
     @media @tablet {
         width: 300px;
     }
+
     @media @mobile-sm {
         display: none;
     }

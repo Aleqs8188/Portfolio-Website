@@ -1,16 +1,20 @@
 // compress: true
 
 @import "vars";
+
 .body_hide {
-	opacity: 0;
-	transition: .9s opacity ease-in-out;
+    opacity: 0;
+    transition: .9s opacity ease-in-out;
 }
+
 .body_visible {
-	opacity: 1;
+    opacity: 1;
 }
+
 html {
     font-size: 15px;
 }
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -24,6 +28,7 @@ svg {
 svg:not(:root) {
     overflow: hidden;
 }
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -37,26 +42,39 @@ body {
     &.no-skroll {
         overflow: hidden;
     }
-    @media @mobile-sm,@mobile,@tablet,@notebook {
+
+    @media @mobile-sm,
+    @mobile,
+    @tablet,
+    @notebook {
         height: 345vh;
     }
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
+
 body.lock {
     overflow: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0%;
 }
 
@@ -72,8 +90,8 @@ p {
 
 
 canvas {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
 /* Vendor */
